@@ -1,5 +1,10 @@
 ASSUMPTIONS MADE:
 
+-- user_ids can have multiple anonymous_id
+-- anonymous_id cannot have more than 1 user_id
+-- 1 unique anonymous_id corresponds to 1 session
+-- only user_ids can have multiple sessions
+
 -- ROWS calculated does not include rows without user_id but anon_id has both user_id and non_user_id pair
 
 -- EXAMPLE: SELECT x.* FROM ikarosTest.ikaros_pages x where anonymous_id = '0e0167f88d52c91e24faa5f0634c512f';
