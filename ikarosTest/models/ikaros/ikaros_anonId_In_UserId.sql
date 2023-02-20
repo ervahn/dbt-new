@@ -1,0 +1,1 @@
+select distinct anonymous_id from {{ref('ikaros_allRows')}} where user_id != ''
